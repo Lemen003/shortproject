@@ -1,0 +1,142 @@
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+
+.rectangle{
+  height: 600px;
+  width: 400px;
+  background: #ffdc30;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+	@keyframes title_move {
+		0%		{top: 50px}
+		100%	{bottom: 60px;}
+	}
+
+.title{
+	font-family: blambot-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 50px;
+	position: absolute;
+	top: 20%;
+  left: 15%;
+	animation: title_move 4s infinite ease-in-out;
+
+}
+
+.name{
+	font-family: blambot-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	position: absolute;
+	top: 30%;
+  left: 13%;
+
+}
+
+.book{
+	font-family: blambot-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 15px;
+	position: absolute;
+	top: 44%;
+  left: 10%;
+	letter-spacing: 18px;
+
+}
+
+@keyframes author_move {
+	0%		{top: 60px}
+	100%	{bottom: 50px;}
+}
+
+.author{
+	font-family: blambot-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 15px;
+	position: absolute;
+	top: 90%;
+	left: 27%;
+	animation: author_move 8s infinite ease-in-out;
+}
+
+#line
+{
+	width: 55px;
+	height: 100px;
+	background-color: black;
+	z-index: 1;
+	transform: rotate(66deg);
+	position: absolute;
+	top: 58%;
+	right: 8%;
+
+}
+
+#linee
+{
+	width: 55px;
+	height: 100px;
+	background-color: black;
+	z-index: 1;
+	transform: rotate(-66deg);
+	position: absolute;
+	top: 58%;
+	right: 25%;
+
+}
+
+#lineee
+{
+	width: 55px;
+	height: 100px;
+	background-color: black;
+	z-index: 1;
+	transform: rotate(66deg);
+	position: absolute;
+	top: 58%;
+	right: 42%;
+
+}
+
+#lineeee
+{
+	width: 55px;
+	height: 100px;
+	background-color: black;
+	z-index: 1;
+	transform: rotate(-66deg);
+	position: absolute;
+	top: 58%;
+	right: 59%;
+
+}
+
+#lineeeee
+{
+	width: 55px;
+	height: 100px;
+	background-color: black;
+	z-index: 1;
+	transform: rotate(66deg);
+	position: absolute;
+	top: 58%;
+	right: 76%;
+
+}
+
+.rectangle:hover{
+filter: blur(8px);
+color: white;
+transition: filter 0.5s;
+}
